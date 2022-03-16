@@ -1,0 +1,54 @@
+
+spring.profiles: test
+kakao-biz-alimtalk:
+  app-key: 'N2cB6kOKJyalfG5O'
+  secret-key: 'AKN6JDm4'
+  send-key: 'cb6c39a5b19b10204d35a5219f7fee0d614bc4cb'
+  base-url: 'https://api-alimtalk.cloud.toast.com/alimtalk/v2.2/appkeys/${kakao-biz.app-key}'
+  detail-url:
+    substitution-send: '/messages'
+    message-results: '/message-results'
+
+---
+spring.profiles: local
+kakao-biz-alimtalk:
+  app-key: 'N2cB6kOKJyalfG5O'
+  secret-key: 'AKN6JDm4'
+  base-url: 'https://api-alimtalk.cloud.toast.com/alimtalk/v2.2/appkeys/${kakao-biz.app-key}'
+  detail-url:
+    substitution-send: '/messages'
+    message-results: '/message-results'
+
+
+---
+spring.profiles: alpha
+kakao-biz-alimtalk:
+  app-key: 'N2cB6kOKJyalfG5O'
+  secret-key: 'AKN6JDm4'
+  base-url: 'https://api-alimtalk.cloud.toast.com/alimtalk/v2.2/appkeys/${kakao-biz.app-key}'
+  detail-url:
+    substitution-send: '/messages'
+    message-results: '/message-results'
+
+
+---
+spring.profiles: beta
+kakao-biz-alimtalk:
+  app-key: 'N2cB6kOKJyalfG5O'
+  secret-key: 'AKN6JDm4'
+  base-url: 'https://api-alimtalk.cloud.toast.com/alimtalk/v2.2/appkeys/${kakao-biz.app-key}'
+  detail-url:
+    substitution-send: '/messages'
+    message-results: '/message-results'
+
+
+---
+spring.profiles: prod
+kakao-biz-alimtalk:
+  app-key: 'N2cB6kOKJyalfG5O'
+  secret-key: 'AKN6JDm4'
+  base-url: 'https://api-alimtalk.cloud.toast.com/alimtalk/v2.2/appkeys/${kakao-biz.app-key}'
+  detail-url:
+    substitution-send: '/messages'
+    message-results: '/message-results'
+
